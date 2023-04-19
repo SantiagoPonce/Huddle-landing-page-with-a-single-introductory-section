@@ -1,0 +1,91 @@
+:root   {
+--Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+}
+*   {
+    box-sizing: border-box;
+}
+
+li  {
+    display: inline-block;
+}
+img {
+    max-inline-size: 100%;
+    object-fit: cover;
+}
+
+.body{
+    background-color: var(--Violet);
+    background-image: url(../images/bg-mobile.svg);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+
+main    {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+
+.nav__logo  {
+    max-inline-size: 45%;
+}
+
+.text-container {
+    text-align: center;
+
+}
+.text-container h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-container p   {
+    line-height: 1.5rem;
+    font-size: .8rem;
+}
+.social-share   {
+    max-inline-size: 100%;
+    margin: 0 auto;
+}
+.social-share__list   {
+    height: max-content;
+    margin: 0 auto;
+}
+
+.social-share__button  {
+    border: solid white 1px;
+    border-radius: 18px;
+    padding: .4rem;
+    margin: .5rem;
+    flex-grow: 1;
+
+}
+
+.social-share__img  {
+    height: 18px;
+    width: 18px;
+}
+
+.button-register    {
+    padding: 1rem;
+    inline-size: 65%;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--Violet);
+    font-weight: 400;
+}
+
+.attribution    {
+    max-inline-size: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
