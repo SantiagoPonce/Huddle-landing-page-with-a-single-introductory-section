@@ -16,3 +16,4 @@
 *.txt
 design/
 *.md
+.vscode/
