@@ -34,21 +34,28 @@ main    {
 .nav__logo  {
     max-inline-size: 45%;
 }
-
-.text-container {
+.register   {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.register__text {
     text-align: center;
 
 }
-.text-container h1{
+.register__text h1{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
     font-family: 'Poppins', sans-serif;
+    margin: 1rem 0;
 }
 
-.text-container p   {
+.register__text p   {
     line-height: 1.5rem;
-    font-size: .8rem;
+    font-size: 1rem;
+    font-weight: 400;
+
 }
 .social-share   {
     max-inline-size: 100%;
@@ -67,25 +74,99 @@ main    {
     flex-grow: 1;
 
 }
+.social-share__button:hover   {
+    border-color: var(--SoftMagenta);
+}
 
 .social-share__img  {
     height: 18px;
     width: 18px;
 }
 
-.button-register    {
-    padding: 1rem;
-    inline-size: 65%;
-    margin: 0 auto;
+.register__button    {
+    padding: .75rem 1rem;
+    min-inline-size: 65%;
     border-radius: 1.5rem;
     border: none;
     color: var(--Violet);
     font-weight: 400;
+    align-self: center;
+
+}
+
+.register__button:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
 }
 
 .attribution    {
     max-inline-size: 75%;
     margin: 0 auto;
     text-align: center;
+    text-decoration: none;
+
 }
 
+.attribution a{
+    text-decoration: none;
+    color: var(--SoftMagenta);
+}
+.attribution a:hover    {
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+    
+
+    .body   {
+        background-image: url(../images/bg-desktop.svg);
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        row-gap: unset;
+    }
+
+
+    .nav {
+        grid-column: 1/1;
+    }
+
+    .nav__logo  {
+        max-inline-size: 25%;
+        margin-bottom: 2rem;
+    }
+    
+    .hero   {
+        grid-column: 1/1;
+
+    }
+
+    .register   {
+        padding: 0 2rem;
+    }
+    .register__text {
+        grid-column: 2/3;
+        text-align: start;
+        margin-top: 4rem;
+    }
+
+    .register__text h1{
+        max-inline-size: 20ch;
+    }
+
+    .register__text p   {
+        max-inline-size: 30rem;
+    }
+    .register__button   {
+        min-inline-size: 25%;
+        align-self: flex-start;
+    }
+    .social-share   {
+        grid-column: 2/3;
+        margin-inline-end: 2rem;
+    }
+
+    
+}
